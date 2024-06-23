@@ -131,7 +131,7 @@ setInterval(() => {
     document.getElementById("polyline").setAttribute("points", `1071,0 704,363 0,${window.innerHeight} ${window.innerWidth},${window.innerHeight} ${window.innerWidth},0`);
 }, 1);
 
-fetch('https://api.github.com/repos/114bft68/o47d540h')
+fetch('https://api.github.com/repos/114bft68/013op9p2')
     .then(r => {
         return r.json();
     })
