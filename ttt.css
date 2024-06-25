@@ -1,0 +1,41 @@
+#ttt {
+    position: absolute;
+    border: 1px solid red;
+    left: calc(50% - 195.8px);
+    top: calc(56.25% - 195.8px);
+}
+
+#you {
+    right: calc(50% + 300px);
+    position: absolute;
+    top: 50%;
+    font-size: 65px;
+}
+
+#opponent {
+    left: calc(50% + 300px);
+    position: absolute;
+    top: 50%;
+    font-size: 65px;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 100;
+    position: absolute;
+    top: 12.5vh;
+    height: 87.5vh;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#friend,
+#bot {
+    height: 20vh;
+    width: 20vh;
+    font-size: 20px;
+}

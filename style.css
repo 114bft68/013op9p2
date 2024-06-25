@@ -19,13 +19,15 @@ body {
     height: 12.5vh;
     width: 100vw;
     position: absolute;
-    z-index: 1;
+    z-index: 1000;
 }
 
 button {
     outline: none;
     margin: 0;
     padding: 0;
+    background: transparent;
+    border: none;
 }
 
 button:hover {
@@ -33,32 +35,47 @@ button:hover {
 }
 
 .select {
-    background-color: transparent;
     height: 12.5vh;
     box-shadow: none;
     border: none;
     width: 14.5vw;
     text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#return {
+    height: 12.5vh;
+    width: 12.5vh;
+    position: fixed;
+    left: calc(100vw - 12.5vh);
+}
+
+#home:hover {
+    transform: scale(1.1);
+    transition: all 0.55s;
+}
+
+#return:hover {
+    background-color: transparent !important;
 }
 
 #buttonList {
     width: 14.5vw;
-    height: 0px;
     flex-direction: column;
     display: none;
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 
 .select:nth-child(1):hover ~ #buttonList {
     display: flex;
-    height: auto;
     transition: all 0.45s;
 }
 
 #buttonList:not([style="display: none;"]):hover {
     display: flex;
-    height: auto;
 }
 
 .minigame {
